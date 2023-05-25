@@ -4,8 +4,11 @@ import TeamController from '../controllers/teamController';
 
 const router = express.Router();
 
-const teamController = new TeamController(TeamService);
+const teamService = new TeamService();
 
-router.get('/', teamController.getAll);
+const teamController = new TeamController(teamService);
+
+router.get('/', (req, res) => teamController.getAll(req, res));
+router.get('/:id', (req, res) => teamController.getById(req, res));
 
 export default router;

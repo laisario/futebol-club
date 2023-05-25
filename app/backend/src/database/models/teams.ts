@@ -8,13 +8,17 @@ class Teams extends Model {
 }
 
 Teams.init({
-  id: DataTypes.INTEGER,
+  id: {
+    type: DataTypes.INTEGER,
+    autoIncrement: true,
+    primaryKey: true,
+  },
   teamName: DataTypes.STRING,
 }, {
   // ... Outras configs
   underscored: true,
   sequelize: db,
-  modelName: 'teams',
+  modelName: 'Teams',
   timestamps: false,
 });
 

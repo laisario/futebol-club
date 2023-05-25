@@ -1,10 +1,13 @@
 interface TeamServiceInterface {
-  getAll: () => Promise<Team[]>;
+  getAll: () => Promise<TeamInterface[]>;
+  getById: (id: number) => Promise<TeamInterface | null>;
 }
 
-interface Team {
+interface TeamInterface {
   id: number;
-  name: string;
+  teamName: string;
 }
+
+export { TeamInterface };
 
 export default TeamServiceInterface;

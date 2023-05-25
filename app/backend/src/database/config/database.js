@@ -1,5 +1,7 @@
 "use strict";
 exports.__esModule = true;
+
+// require('dotenv').config()
 var config = {
     username: process.env.DB_USER || 'root',
     password: process.env.DB_PASS || '123456',

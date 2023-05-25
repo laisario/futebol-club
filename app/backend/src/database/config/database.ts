@@ -1,6 +1,8 @@
 import { Options } from 'sequelize';
 
-import "dotenv/config"
+// import "dotenv/config"
+// import * as dotenv from 'dotenv'
+// dotenv.config()
 
 const config: Options = {
   username: process.env.DB_USER || 'root',
