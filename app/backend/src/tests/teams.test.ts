@@ -84,14 +84,14 @@ describe('Teams Router', () => {
   afterEach(() => {
     sinon.restore();
   });
-  
+
   describe('GET /teams', () => {
     describe('Requisição bem sucedida', function () {
       it('status 200 e times', async function () {
         const response = await chai.request(app).get('/teams');
         expect(response.status).to.be.equal(200);
         expect(response.body).to.deep.equal(teams);
-      });    
+      });
     });
     // describe('Requisição mal sucedida', function () {
     //   it('status 500 e mensagem de erro', async function () {
@@ -106,11 +106,11 @@ describe('Teams Router', () => {
   describe('GET /teams/id', () => {
     describe('Requisição bem sucedida', function () {
       it('status 200 e time', async function () {
-      
+
         const response = await chai.request(app).get('/teams/1');
         expect(response.status).to.be.equal(200);
         expect(response.body).to.deep.equal(teams[0]);
-      });    
+      });
     });
     // describe('Requisição mal sucedida', function () {
     //   it('status 500 e mensagem de erro', async function () {
