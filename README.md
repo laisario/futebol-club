@@ -1,10 +1,7 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# Site Informativo de Futebol
+Este projeto é um site informativo sobre partidas e classificações de futebol, permitindo que os usuários autenticados visualizem essas informações. O backend foi construído com Node.js, Sequelize e TypeScript como ORM.
+
+# Funcionalidades
+- Autenticação de Usuário: Os usuários podem se autenticar para acessar as informações sobre partidas e classificações.
+- Visualização de Partidas: Exibe informações sobre partidas recentes, próximas e passadas.
+- Classificações: Mostra as tabelas de classificação dos times.
